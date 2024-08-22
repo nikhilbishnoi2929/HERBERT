@@ -42,11 +42,11 @@ module.exports = {
         full: "100% 100%",
       },
       backgroundImage: {
-
+        headerBg: `url("./assets/images/webp/Hero.webp")`,
       },
       fontSize: {
         "10xl": "44px",
-        "11px": "56px"
+        "11xl": "56px"
       }
     },
   },

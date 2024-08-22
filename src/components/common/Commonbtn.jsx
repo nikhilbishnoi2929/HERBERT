@@ -12,3 +12,13 @@
 // };
 
 // export default CommonButton;
+
+const COMMON_BUTTON = ({text, className, onclick, href}) => {
+    const BUTTON_CLASS = `font-rubik font-semibold text-base leading-5 text-white bg-btnOrange p-[14px 24px] py-[14px] px-[24px] rounded-full bg-blue  hover:border-black duration-300 ease-linear cursor-pointer  flex items-center justify-center w-fit ${className}`
+    return(
+        <a href={href}
+        onclick={onclick}
+        className={BUTTON_CLASS}>{text}</a>
+    );
+};
+export default COMMON_BUTTON;
