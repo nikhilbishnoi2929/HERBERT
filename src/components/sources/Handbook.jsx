@@ -57,7 +57,8 @@ const Handbook = () => {
     <div>
       <div className='container max-w-[1164px] mx-auto px-3 pt-[120px] pb-[120px] max-md:pb-[80px] max-sm:pb-[64px] -mb-[134px] max-sm:-mb-[150px] max-sm:pt-20 max-md:pt-24'>
         <div className='row -mx-3 flex flex-wrap flex-row items-center pb-[64px] max-sm:pb-20'>
-          <div className='w-full lg:w-6/12 px-3'>
+          <div className='w-full lg:w-6/12 px-3 flex justify-center'>
+            <div className=' flex flex-col'>
             <h3 className='text_Animation font-semibold max-sm:text-2xl text-5xl leading-[56px] max-md:text-4xl text-black'>
               Visa <span className='text-orange'>Handbook</span>
             </h3>
@@ -82,8 +83,9 @@ const Handbook = () => {
                 Nuanced interpretations of immigration laws and regulations
               </h4>
             </div>
+            </div>
           </div>
-          <div className='hello_ManTwo w-full lg:w-6/12 px-3 flex max-sm:justify-center max-sm:pt-[56px] max-lg:pt-20'>
+          <div className='hello_ManTwo w-full lg:w-6/12 px-3 flex max-lg:justify-center max-sm:pt-[56px] max-lg:pt-20'>
             <img src={man_Image} className=' pointer-events-none max-sm:max-w-[261px] max-w-[392px]' alt="man_Image" />
           </div>
         </div>
