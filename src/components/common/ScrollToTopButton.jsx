@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineArrowUp } from 'react-icons/ai'; // Import an icon for the button
+import { AiOutlineArrowUp } from 'react-icons/ai'; 
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
-
-  // Show the button when scrolled down 100px from the top
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
@@ -12,8 +10,6 @@ const ScrollToTopButton = () => {
       setIsVisible(false);
     }
   };
-
-  // Scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -26,7 +22,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 p-3 border-[1px] border-btnOrange bg-btnOrange text-white rounded-full shadow-lg transition-opacity duration-300 ${
+      className={`fixed bottom-4 z-40 right-4 p-3 border-[1px] border-btnOrange bg-btnOrange text-white rounded-full shadow-lg transition-opacity duration-300 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       } `}
     >
