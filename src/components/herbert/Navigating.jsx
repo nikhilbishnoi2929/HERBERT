@@ -56,21 +56,7 @@ const Navigating = () => {
         },
       }
     );
-    gsap.fromTo(
-      '.button',
-      { x: 100, opacity: 0,duration: 2, },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.button',
-          start: 'top center',
-          end: 'bottom 50%',
-        },
-      }
-    );
+    
     gsap.fromTo(
       '.helloMan', {
       duration: 3,
