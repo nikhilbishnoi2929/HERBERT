@@ -109,9 +109,7 @@ const Navigating = () => {
             <p className='font-lato para max-sm:text-sm font-normal z-20 text-base leading-6 text-gray pt-4 max-sm:pt-[14px]'>
               Herbert Visa: Your AI-powered assistant for German visa and immigration processes
             </p>
-            <div className='button'>
               <COMMON_BUTTON className='mt-[42px] max-sm:mt-8 z-20' text={"Start your conversation with Herbert"} />
-            </div>
           </div>
         </div>
         <div className='xl:hidden flex justify-between w-full items-start pt-20 gap-4'>

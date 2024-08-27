@@ -46,21 +46,21 @@ const Frequently = () => {
     )
     gsap.fromTo(
       '.paraHelp', {
-        duration: 2,
-        opacity: 0,
-        x: 100,
-  
-      }, {
-        duration: 2,
-        x: 0,
-        opacity: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.paraHelp',
-          start: 'top bottom',
-          end: 'bottom top',
-        }
+      duration: 2,
+      opacity: 0,
+      x: 100,
+
+    }, {
+      duration: 2,
+      x: 0,
+      opacity: 1,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: '.paraHelp',
+        start: 'top bottom',
+        end: 'bottom top',
       }
+    }
     )
   }, []);
   const [activeIndex, ACCORDION_INDEX] = useState(null);
@@ -93,13 +93,11 @@ const Frequently = () => {
                 >
                   <span className="z-30 font-lato font-normal max-sm:text-sm relative max-sm:leading-5 text-base leading-6 text-black">{faq.question}</span>
                   <span className="float-right z-30">
-                    <svg width="40" className={`${activeIndex === index ? "transform rotate-180 hidden" : ""} w-[32px] h-[32px] md:w-[40px] md:h-[40px]`} height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20" cy="20" r="19.5" stroke="white" />
-                      <path d="M21 13C21 12.4477 20.5523 12 20 12C19.4477 12 19 12.4477 19 13V18.9999L13 18.9999C12.4477 18.9999 12 19.4476 12 19.9999C12 20.5522 12.4477 20.9999 13 20.9999L19 20.9999V27C19 27.5523 19.4477 28 20 28C20.5523 28 21 27.5523 21 27V20.9999L27 20.9999C27.5523 20.9999 28 20.5522 28 19.9999C28 19.4476 27.5523 18.9999 27 18.9999L21 18.9999V13Z" fill="black" />
+                    <svg className={`${activeIndex === index ? "transform rotate-180 hidden" : ""}  w-[24px] h-[24px]`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18 12.998H13V17.998C13 18.2633 12.8946 18.5176 12.7071 18.7052C12.5196 18.8927 12.2652 18.998 12 18.998C11.7348 18.998 11.4804 18.8927 11.2929 18.7052C11.1054 18.5176 11 18.2633 11 17.998V12.998H6C5.73478 12.998 5.48043 12.8927 5.29289 12.7052C5.10536 12.5176 5 12.2633 5 11.998C5 11.7328 5.10536 11.4785 5.29289 11.2909C5.48043 11.1034 5.73478 10.998 6 10.998H11V5.99805C11 5.73283 11.1054 5.47848 11.2929 5.29094C11.4804 5.1034 11.7348 4.99805 12 4.99805C12.2652 4.99805 12.5196 5.1034 12.7071 5.29094C12.8946 5.47848 13 5.73283 13 5.99805V10.998H18C18.2652 10.998 18.5196 11.1034 18.7071 11.2909C18.8946 11.4785 19 11.7328 19 11.998C19 12.2633 18.8946 12.5176 18.7071 12.7052C18.5196 12.8927 18.2652 12.998 18 12.998Z" fill="#5F5F5F" />
                     </svg>
-                    <svg className={`${activeIndex === index ? "block" : "hidden"} w-[32px] h-[32px] md:w-[40px] md:h-[40px]`} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20" cy="20" r="19.5" stroke="white" />
-                      <path d="M13 19L19 19H21L27 19C27.5523 19 28 19.4477 28 20C28 20.5523 27.5523 21 27 21L21 21L19 21L13 21C12.4477 21 12 20.5523 12 20C12 19.4477 12.4477 19 13 19Z" fill="black" />
+                    <svg className={`${activeIndex === index ? "block" : "hidden"} `} width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 1.99805H13C13.2652 1.99805 13.5196 1.89269 13.7071 1.70515C13.8946 1.51762 14 1.26326 14 0.998047C14 0.73283 13.8946 0.478477 13.7071 0.29094C13.5196 0.103404 13.2652 -0.00195312 13 -0.00195312H7.69856H1C0.734784 -0.00195312 0.48043 0.103404 0.292893 0.29094C0.105357 0.478477 0 0.73283 0 0.998047C0 1.26326 0.105357 1.51762 0.292893 1.70515C0.48043 1.89269 0.734784 1.99805 1 1.99805H8Z" fill="#5F5F5F" />
                     </svg>
                   </span>
                 </button>

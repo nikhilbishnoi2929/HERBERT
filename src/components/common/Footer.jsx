@@ -51,7 +51,7 @@ const Footer = () => {
                         <a href=""> <img className=' pointer-events-none max-w-[326px] max-sm:max-w-[210px]' src={page_Logo} alt="page_Logo" /></a>
                         <p className=' font-lato font-normal text-base max-sm:text-sm max-sm:leading-5  leading-6 text-gray max-w-[408px] max-sm:pt-3 pt-4'>Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor.</p>
                     </div>
-                    <div className='z-20 footerHerbert w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
+                    <div className='z-20 pt-4 footerHerbert w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
                         <ul>
                             <li><a href="" className=' font-lato font-medium text-base leading-5 text-black opacity-[90%]'>Quick Links</a></li>
                             <li className='pt-4'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Services</a></li>
@@ -60,7 +60,7 @@ const Footer = () => {
                             <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Plans</a></li>
                         </ul>
                     </div>
-                    <div className='z-20 footerFollow w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
+                    <div className='z-20 pt-4 footerFollow w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
                         <ul>
                             <li><a href="" className=' font-lato font-medium text-base leading-5 text-black opacity-[90%]'>Support</a></li>
                             <li className='pt-4'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Help Center</a></li>
@@ -68,7 +68,7 @@ const Footer = () => {
                             <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div className='z-20 footerFollow w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-end'>
+                    <div className='z-20 pt-4 footerFollow w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-end'>
                         <div className=' flex flex-col'>
                             <a href="" className='z-20 font-lato font-medium text-base leading-5 text-black opacity-[90%]'>Follow Us</a>
                             <div className='z-20 flex gap-3 pt-4'>
