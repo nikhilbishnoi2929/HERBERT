@@ -1,3 +1,10 @@
 * {
   font-family: "Rubik", sans-serif;
 }
+
+.custom_Duration {
+  transition: all linear 400ms;
+}
+.hover_Effect:hover {
+  transform: scale(1.2);
+}

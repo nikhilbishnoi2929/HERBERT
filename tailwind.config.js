@@ -30,7 +30,8 @@ module.exports = {
         rubik: ["Rubik", "sans-serif"],
       },
       boxShadow: {
-
+        card_Shadow: "0px 0px 16px 6px #8080801F",
+        btn_Shadow: "0px 0px 10px 0px #FF9748"
       },
       colors: {
         orange: "#FF4C24",
@@ -43,6 +44,7 @@ module.exports = {
       },
       backgroundImage: {
         headerBg: `url("./assets/images/webp/Hero.webp")`,
+        footerBg: `url("./assets/images/webp/footerBg.webp")`
       },
       fontSize: {
         "10xl": "44px",
