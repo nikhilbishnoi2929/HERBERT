@@ -5,7 +5,6 @@ import accordion_Bg from '../../assets/images/webp/accordionBg.webp';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-
 const Frequently = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -65,11 +64,9 @@ const Frequently = () => {
     )
   }, []);
   const [activeIndex, ACCORDION_INDEX] = useState(null);
-
   const toggleAccordion = (index) => {
     ACCORDION_INDEX(activeIndex === index ? null : index);
   };
-
   return (
     <div className=' relative '>
       <div className='container max-w-[1164px] mx-auto px-3 -mb-[15px] max-sm:-mb-20 max-lg:-mb-[40px] max-md:-mb-[60px]'>
@@ -94,7 +91,7 @@ const Frequently = () => {
                   onClick={() => toggleAccordion(index)}
                   className={`${activeIndex === index ? "p-[10px_10px_0px_10px] relative z-30 lg:p-[21px_20px_0px_20px] border-transparent" : "p-2 lg:p-[18px_24px] max-lg:p-[14px]"} w-full text-left bg-blur_black backdrop-blur-lg flex items-center justify-between border-[1px] border-[#FFFFFF4D] transition ease-in-out`}
                 >
-                  <span className="z-30 font-lato font-normal max-sm:text-sm relative max-sm:leading-5  text-base leading-6 text-black">{faq.question}</span>
+                  <span className="z-30 font-lato font-normal max-sm:text-sm relative max-sm:leading-5 text-base leading-6 text-black">{faq.question}</span>
                   <span className="float-right z-30">
                     <svg width="40" className={`${activeIndex === index ? "transform rotate-180 hidden" : ""} w-[32px] h-[32px] md:w-[40px] md:h-[40px]`} height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="20" cy="20" r="19.5" stroke="white" />
@@ -125,5 +122,4 @@ const Frequently = () => {
     </div>
   );
 };
-
 export default Frequently;

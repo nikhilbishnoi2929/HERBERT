@@ -15,19 +15,19 @@ const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
       '.head',
-      { y: -50, opacity: 0 ,duration: 2,},
+      { y: -50, opacity: 0 ,duration: 0.5,},
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         ease: 'power3.out',
-        delay: 0.7,
-        stagger: 0.6,
+        delay: 0.3,
+        stagger: 0.5,
         scrollTrigger: {
           trigger: '.head',
           start: 'top center',
           end: 'bottom 50%',
-          toggleActions: 'play none none reverse',
+          // toggleActions: 'play none none reverse',
         },
       }
     );
@@ -67,17 +67,17 @@ const Hero = () => {
           <div className='py-[23px] max-md:py-[14px] flex justify-between items-center'>
             <img className='z-[100] max-sm:max-w-[117px] logo pointer-events-none' src={logo} alt="logo" />
             <div className={`flex items-center ${data ? 'right-0' : 'right-[-100%]'} items-center text-center justify-between z-[50] max-md:fixed max-md:bg-white max-md:w-full max-md:h-full max-xl:top-0 max-md:flex-col max-md:justify-start max-md:pt-[108px] duration-300`}>
-              <ul className='flex max-md:px-[24px] gap-11 max-md:gap-6 text-center items-center z-[50] max-md:flex-col max-md:justify-center'>
+              <ul className='flex w-full max-md:px-[24px] gap-11 max-md:gap-6 text-center items-center z-[50] max-md:flex-col max-md:justify-center'>
                 {HERO_TEXT.map((obj, index) => (
-                  <div className='head' key={index}>
+                  <li className='head max-md:border-b max-md:border-[#00000029] max-md:pb-6 flex w-full justify-center max-w-[327px]' key={index}>
                     <Link
                       to={obj.path}
                       onClick={() => setData(false)}
-                      className='font-lato font-normal text-base leading-6 text-gray sm:text-base sm:leading-6 hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'
+                      className='font-lato text-nowrap font-normal text-base leading-6 text-gray sm:text-base sm:leading-6 hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'
                     >
                       {obj.label}
                     </Link>
-                  </div>
+                  </li>
                 ))}
               </ul>
               <div className='flex md:hidden justify-center pt-8'>

@@ -52,11 +52,7 @@ const Handbook = () => {
         }
       }
     );
-    
-    
-
   }, []);
-
   return (
     <div>
       <div className='container max-w-[1164px] mx-auto px-3 pt-[120px] pb-[120px] max-md:pb-[80px] max-sm:pb-[64px] -mb-[134px] max-sm:-mb-[150px] max-sm:pt-20 max-md:pt-24'>
@@ -88,7 +84,7 @@ const Handbook = () => {
             </div>
           </div>
           <div className='hello_ManTwo w-full lg:w-6/12 px-3 flex max-sm:justify-center max-sm:pt-[56px] max-lg:pt-20'>
-            <img src={man_Image} className='max-sm:max-w-[261px] max-w-[392px]' alt="man_Image" />
+            <img src={man_Image} className=' pointer-events-none max-sm:max-w-[261px] max-w-[392px]' alt="man_Image" />
           </div>
         </div>
         <div className='max-w-[1140px] rounded-[8px] border-[1px] border-[#00000029] bg-white p-6 max-sm:p-4'>
@@ -100,5 +96,4 @@ const Handbook = () => {
     </div>
   );
 }
-
 export default Handbook;

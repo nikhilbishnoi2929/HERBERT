@@ -7,42 +7,41 @@ gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
     useEffect(() => {
         gsap.fromTo(
-          '.footerHerbert', {
-          duration: 2,
-          opacity: 0,
-          x: -100,
-    
-        }, {
-          duration: 2,
-          x: 0,
-          opacity: 1,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: '.footerHerbert',
-            start: 'top bottom',
-            end: 'bottom top',
-          }
-        }
-        )
-        gsap.fromTo(
-          '.footerFollow', {
+            '.footerHerbert', {
             duration: 2,
             opacity: 0,
-            x: 100,
-      
-          }, {
+            x: -100,
+        }, {
             duration: 2,
             x: 0,
             opacity: 1,
             ease: 'power3.out',
             scrollTrigger: {
-              trigger: '.footerFollow',
-              start: 'top bottom',
-              end: 'bottom top',
+                trigger: '.footerHerbert',
+                start: 'top bottom',
+                end: 'bottom top',
             }
-          }
+        }
         )
-      }, []);
+        gsap.fromTo(
+            '.footerFollow', {
+            duration: 2,
+            opacity: 0,
+            x: 100,
+
+        }, {
+            duration: 2,
+            x: 0,
+            opacity: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.footerFollow',
+                start: 'top bottom',
+                end: 'bottom top',
+            }
+        }
+        )
+    }, []);
     const year = new Date().getFullYear()
     return (
         <div className='bg-footerBg'>

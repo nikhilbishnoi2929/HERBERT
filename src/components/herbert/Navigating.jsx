@@ -5,21 +5,19 @@ import man_Second from '../../assets/images/webp/manImgSecond.webp';
 import Hero from '../common/Hero';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
-
 const Navigating = () => {
   useEffect(() => {
     // Staggered animation for heading text
     gsap.fromTo(
       '.heading span',
-      { opacity: 0, y: 50, rotation: 0, duration: 4,    },
+      { opacity: 0, y: 50, rotation: 0, duration: 4, },
       {
         opacity: 1,
         y: 0,
         rotation: 0,
-        duration: 4,   
-        stagger: 0.1, 
+        duration: 4,
+        stagger: 0.1,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.heading',
@@ -29,12 +27,11 @@ const Navigating = () => {
         },
       }
     );
-
     gsap.to('.heading span', {
       rotation: 5,
       yoyo: true,
       repeat: -1,
-      duration: 4,  
+      duration: 4,
       ease: 'easeInOut',
       scrollTrigger: {
         trigger: '.heading',
@@ -43,7 +40,6 @@ const Navigating = () => {
         scrub: true,
       },
     });
-
     gsap.fromTo(
       '.para',
       { x: -100, opacity: 0, scale: 0.8 },
@@ -51,7 +47,7 @@ const Navigating = () => {
         opacity: 1,
         x: 0,
         scale: 1,
-        duration: 2,  
+        duration: 2,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.para',
@@ -60,14 +56,13 @@ const Navigating = () => {
         },
       }
     );
-
     gsap.fromTo(
       '.button',
-      { x: 100, opacity: 0,  },
+      { x: 100, opacity: 0,duration: 2, },
       {
         opacity: 1,
         x: 0,
-        duration: 2,  
+        duration: 2,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.button',
@@ -77,13 +72,13 @@ const Navigating = () => {
       }
     );
     gsap.fromTo(
-      '.helloMan',{
-        duration: 3,
-        x: -100,
-        opacity: 0
-      },
+      '.helloMan', {
+      duration: 3,
+      x: -100,
+      opacity: 0
+    },
       {
-        opacity:1,
+        opacity: 1,
         x: 0,
         duration: 3,
         ease: 'power3.out',
@@ -91,18 +86,17 @@ const Navigating = () => {
           trigger: '.helloMan',
           start: "top center",
           end: "bottom 50%"
-
         }
       }
     )
     gsap.fromTo(
-      '.helloManTwo',{
-        duration: 3,
-        x: 100,
-        opacity: 0
-      },
+      '.helloManTwo', {
+      duration: 3,
+      x: 100,
+      opacity: 0
+    },
       {
-        opacity:1,
+        opacity: 1,
         x: 0,
         duration: 3,
         ease: 'power3.out',
@@ -110,11 +104,9 @@ const Navigating = () => {
           trigger: '.helloManTwo',
           start: "top center",
           end: "bottom 50%"
-
         }
       }
     )
-
   }, []);
 
   return (

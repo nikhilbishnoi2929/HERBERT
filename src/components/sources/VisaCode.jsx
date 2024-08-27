@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import cardFirst from '../../assets/images/svg/cardFirstVisa.svg';
 import cardProcessing from '../../assets/images/svg/cardProcessing.svg';
-import cardRequired from '../../assets/images/svg/cardRequired .svg'; // Ensure there's no trailing space
+import cardRequired from '../../assets/images/svg/cardRequired .svg';
 import COMMON_BUTTON from '../common/Commonbtn';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
-
 const VisaCode = () => {
   useEffect(() => {
-    // GSAP Animation for .visaCode
     gsap.fromTo(
       '.visa-application',
       { x: -150, opacity: 0 },
@@ -25,11 +22,9 @@ const VisaCode = () => {
           trigger: '.visa-application',
           start: 'top 70%',
           end: 'bottom bottom',
-          // toggleActions: 'play none none reverse',
         }
       }
     );
-
     gsap.fromTo(
       '.top-card',
       { y: -100, opacity: 0 },
@@ -42,17 +37,17 @@ const VisaCode = () => {
         scrollTrigger: {
           trigger: '.top-card',
           start: 'top 70%',
-          // markers:true,
           end: 'bottom 20%',
         }
       }
     );
-
     gsap.fromTo(
       '.text-VisaCode',
-      { opacity: 0, x: 100 },
+      { opacity: 0, x: 100,duration: 3, },
       {
         opacity: 1,
+        delay: 0.6,
+        stagger: 0.4,
         x: 0,
         duration: 3,
         ease: 'power3.out',
@@ -63,7 +58,6 @@ const VisaCode = () => {
         }
       }
     );
-
     gsap.fromTo(
       '.bottom-application',
       { opacity: 0, y: 100 },
@@ -79,9 +73,7 @@ const VisaCode = () => {
         }
       }
     );
-
   }, []);
-
   return (
     <div className='bg-[#FFF8F2]'>
       <div className='container max-w-[1164px] mx-auto px-3 py-[100px] max-sm:py-[64px] max-md:py-[80px]'>
@@ -118,14 +110,14 @@ const VisaCode = () => {
               </div>
             </div>
           </div>
-          <div className='w-full lg:w-6/12 px-3 max-lg:pt-[56px]'>
-            <h3 className='text-VisaCode font-rubik font-semibold text-5xl max-md:text-3xl leading-[56px] text-black max-sm:text-2xl'>
+          <div className='w-full text-VisaCode lg:w-6/12 px-3 max-lg:pt-[56px]'>
+            <h3 className='font-rubik font-semibold text-5xl max-md:text-3xl leading-[56px] text-black max-sm:text-2xl'>
               Visa <span className='text-orange'>Code</span>
             </h3>
-            <p className='text-VisaCode font-lato font-normal text-base leading-6 text-gray max-w-[473px] max-sm:text-sm pt-4 max-sm:pt-[14px]'>
+            <p className='font-lato font-normal text-base leading-6 text-gray max-w-[473px] max-sm:text-sm pt-4 max-sm:pt-[14px]'>
               This code standardizes procedures for short-stay visas in the Schengen Area. Herbert's understanding of the Visa-Kodex ensures accurate information on:
             </p>
-            <div className='text-VisaCode mt-[44px] max-sm:mt-[32px]'>
+            <div className='mt-[44px] max-sm:mt-[32px]'>
               <COMMON_BUTTON text="Learn More" />
             </div>
           </div>
@@ -134,5 +126,4 @@ const VisaCode = () => {
     </div>
   );
 };
-
 export default VisaCode;

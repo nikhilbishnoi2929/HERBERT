@@ -7,10 +7,11 @@ import Interactive from '../herbert/Interactive';
 import Visa from '../common/Visa';
 import Footer from '../common/Footer';
 import Frequently from '../herbert/Frequently';
+import ScrollToTopButton from '../common/ScrollToTopButton';
 
 const FirstComponent = () => {
   return (
-    <>
+    <div className=' overflow-hidden'>
       <Navigator />
       <Interactive />
       <Features />
@@ -20,7 +21,8 @@ const FirstComponent = () => {
       <Frequently />
       <Visa />
       <Footer />
-    </>
+      <ScrollToTopButton/>
+    </div>
   )
 }
 

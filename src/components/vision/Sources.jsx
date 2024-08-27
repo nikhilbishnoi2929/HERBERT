@@ -7,10 +7,11 @@ import VisaCode from '../sources/VisaCode'
 import Handbook from '../sources/Handbook'
 import Visa from '../common/Visa'
 import Footer from '../common/Footer'
+import ScrollToTopButton from '../common/ScrollToTopButton'
 
 const Sources = () => {
   return (
-    <>
+    <div className=' overflow-hidden'>
       <Foundations />
       <Residence />
       <Schengen />
@@ -19,7 +20,8 @@ const Sources = () => {
       <Handbook />
       <Visa />
       <Footer />
-    </>
+      <ScrollToTopButton/>
+    </div>
   )
 }
 
