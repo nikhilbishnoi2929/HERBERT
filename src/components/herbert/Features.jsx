@@ -10,69 +10,24 @@ const Features = () => {
 
           <p className='text-gray max-w-[556px] font-lato font-normal text-base leading-[24px] text-center'>Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed.</p>
         </div>
-        {/* <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-between pt-[56px]">
-        <div className="md:w-1/2 md:flex md:justify-around md:items-center">
-          <div className="flex flex-col justify-around w-full md:w-1/2">
-            <div className="flex items-center mb-4 md:mb-6">
-              <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-bold mr-4">
-                1
-              </div>
-              <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">Find out which visa you might want</p>
-            </div>
-            <div className="flex items-center mb-4 md:mb-6">
-              <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-medium mr-4">
-                2
-              </div>
-              <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">Receive a checklist with all necessary documents</p>
-            </div>
-            <div className="flex items-center mb-4 md:mb-6">
-              <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-bold mr-4">
-                3
-              </div>
-              <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">Write your CV / Motivation Letter with Herbert</p>
-            </div>
-          </div>
-          <div className="flex justify-center py-5 items-center md:w-1/2">
-            <img
-              src={Tourism_Man}
-              alt="Herbert guiding"
-              className="max-h-96 w-auto md:h-auto md:w-2/3"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col justify-around w-full md:w-1/2 md:pl-8 ">
-          <div className="flex items-center mb-4 md:mb-6">
-            <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-bold mr-4">
-              4
-            </div>
-
-            <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">Help prepare for your visa interview</p>
-          </div>
-          <div className="flex items-center mb-4 md:mb-6">
-            <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-bold mr-4">
-              5
-            </div>
-            <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">Practice your German interactively with Herbert</p>
-          </div>
-          <div className="flex items-center mb-4 md:mb-6">
-            <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-medium mr-4">
-              6
-            </div>
-            <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">Let Herbert guide you through your fresh start in Germany once you get there</p>
-          </div>
-        </div>
-      </div> */}
-
+      
         <div className="flex flex-col items-center lg:flex-col xl:flex-row xl:flex-wrap xl:justify-between pt-[56px]">
           <div className="xl:w-1/2 xl:flex xl:justify-around xl:items-center items-center">
             <div className="flex flex-col justify-around w-full xl:w-1/2">
+
+
               <div className="flex items-center mb-4 xl:mb-6">
                 <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-bold mr-4">
                   1
                 </div>
+
+
                 <p className="max-w-[325px] font-lato font-medium leading-[24px] text-black text-sm">
                   Find out which visa you might want
+
+
                 </p>
+
               </div>
               <div className="flex items-center mb-4 xl:mb-6">
                 <div className="bg-btnOrange text-white rounded-full h-10 min-w-10 flex items-center justify-center font-medium mr-4">
