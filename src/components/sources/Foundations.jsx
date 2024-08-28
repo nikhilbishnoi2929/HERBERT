@@ -3,7 +3,6 @@ import Hero from '../common/Hero'
 import COMMON_BUTTON from '../common/Commonbtn'
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
 const Foundations = () => {
   useEffect(() => {
@@ -14,18 +13,16 @@ const Foundations = () => {
         opacity: 1,
         y: 0,
         rotation: 0,
-        duration: 4, 
-        stagger: 0.1, 
+        duration: 4,
+        stagger: 0.1,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.heading',
           start: 'top center',
           end: 'bottom 50%',
-          // toggleActions: 'play none none reverse',
         },
       }
     );
-
     gsap.to('.heading span', {
       rotation: 5,
       yoyo: true,
@@ -57,7 +54,7 @@ const Foundations = () => {
     );
     gsap.fromTo(
       '.button',
-      { x: 100, opacity: 0,},
+      { x: 100, opacity: 0, },
       {
         opacity: 1,
         x: 0,
@@ -71,13 +68,13 @@ const Foundations = () => {
       }
     );
     gsap.fromTo(
-      '.helloManTwo',{
-        duration: 3,
-        x: 100,
-        opacity: 0
-      },
+      '.helloManTwo', {
+      duration: 3,
+      x: 100,
+      opacity: 0
+    },
       {
-        opacity:1,
+        opacity: 1,
         x: 0,
         duration: 3,
         ease: 'power3.out',
@@ -88,8 +85,6 @@ const Foundations = () => {
         }
       }
     )
-   
-
   }, []);
   return (
     <div className='bg-headerBg bg-full'>
@@ -103,9 +98,7 @@ const Foundations = () => {
               <span>Expertise </span>
             </h1>
             <p className='para font-lato font-normal max-w-[685px] max-sm:text-sm z-20 text-base leading-6 text-gray pt-4 max-sm:pt-[14px]'>Herbert, our AI chatbot, is built on a comprehensive understanding of German immigration law. To ensure accuracy and reliability, Herbert's knowledge base is derived from the following authoritative sources:</p>
-           <div className=' button'>
-          <COMMON_BUTTON className='mt-[42px] max-sm:mt-8 z-20' text={"Contact Us"} />
-           </div>
+            <COMMON_BUTTON className='mt-[42px] max-sm:mt-8 z-20' text={"Contact Us"} />
           </div>
         </div>
       </div>

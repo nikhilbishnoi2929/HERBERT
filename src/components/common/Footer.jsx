@@ -28,7 +28,6 @@ const Footer = () => {
             duration: 2,
             opacity: 0,
             x: 100,
-
         }, {
             duration: 2,
             x: 0,
@@ -49,7 +48,7 @@ const Footer = () => {
                 <div className=' row flex flex-row flex-wrap -mx-3 pb-[50px] max-sm:pb-[42px]'>
                     <div className='z-20 footerHerbert w-6/12 max-lg:w-full px-3'>
                         <a href=""> <img className=' pointer-events-none max-w-[326px] max-sm:max-w-[210px]' src={page_Logo} alt="page_Logo" /></a>
-                        <p className=' font-lato font-normal text-base max-sm:text-sm max-sm:leading-5  leading-6 text-gray max-w-[408px] max-sm:pt-3 pt-4'>Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor.</p>
+                        <p className='font-lato font-normal text-base max-sm:text-sm max-sm:leading-5 leading-6 text-gray max-w-[408px] max-sm:pt-3 pt-4'>Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor.</p>
                     </div>
                     <div className='z-20 pt-4 footerHerbert w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
                         <ul>
@@ -80,12 +79,11 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=' z-20 w-full relative h-[1px] bg-[#00000029] '></div>
-            <div className=' py-4 flex justify-center'>
+            <div className='z-20 w-full relative h-[1px] bg-[#00000029] '></div>
+            <div className='py-4 flex justify-center'>
                 <h3 className='z-20 font-lato font-normal text-base max-sm:text-sm leading-6 text-gray '>Copyright © {year} herbert, All rights reserved</h3>
             </div>
         </div>
     )
 }
-
 export default Footer

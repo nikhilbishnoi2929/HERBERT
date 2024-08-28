@@ -4,7 +4,6 @@ import Sources from './components/vision/Sources';
 import FirstComponent from './components/vision/FirstComponent';
 function App() {
   return (
-    
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<FirstComponent />} />

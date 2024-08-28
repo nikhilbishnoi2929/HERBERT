@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineArrowUp } from 'react-icons/ai'; 
-
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const handleScroll = () => {
@@ -13,12 +12,10 @@ const ScrollToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   return (
     <button
       onClick={scrollToTop}
@@ -30,5 +27,4 @@ const ScrollToTopButton = () => {
     </button>
   );
 };
-
 export default ScrollToTopButton;

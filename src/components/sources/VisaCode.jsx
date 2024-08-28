@@ -75,7 +75,7 @@ const VisaCode = () => {
     );
   }, []);
   return (
-    <div className='bg-[#FFF8F2]'>
+    <div className='bg-[#FFF8F2] z-20 relative'>
       <div className='container max-w-[1164px] mx-auto px-3 py-[100px] max-sm:py-[64px] max-md:py-[80px]'>
         <div className='flex flex-row flex-wrap -mx-auto items-center'>
           <div className='w-full lg:w-6/12 px-3'>

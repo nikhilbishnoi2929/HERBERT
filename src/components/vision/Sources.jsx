@@ -8,7 +8,7 @@ import Handbook from '../sources/Handbook'
 import Visa from '../common/Visa'
 import Footer from '../common/Footer'
 import ScrollToTopButton from '../common/ScrollToTopButton'
-
+import Preloader from '../common/Preloader'
 const Sources = () => {
   return (
     <div className=' overflow-hidden'>
@@ -21,8 +21,8 @@ const Sources = () => {
       <Visa />
       <Footer />
       <ScrollToTopButton/>
+      <Preloader/>
     </div>
   )
 }
-
 export default Sources

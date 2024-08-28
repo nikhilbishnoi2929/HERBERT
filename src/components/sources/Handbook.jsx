@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react';
 import man_Image from '../../assets/images/webp/helloMan.webp';
-import COMMON_BUTTON from '../common/Commonbtn';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
-
 const Handbook = () => {
   useEffect(() => {
-    // GSAP Animation for .helloManTwo
     gsap.fromTo(
       '.hello_ManTwo',
       {
@@ -24,12 +20,9 @@ const Handbook = () => {
           trigger: '.hello_ManTwo',
           start: 'top center',
           end: 'bottom 50%',
-          // toggleActions: 'play none none reverse',
         }
       }
     );
-
-    // GSAP Animation for .text_Animation
     gsap.fromTo(
       '.text_Animation',
       {
@@ -46,12 +39,27 @@ const Handbook = () => {
         scrollTrigger: {
           trigger: '.text_Animation',
           start: 'top 70%',
-          // markers:true,
           end: 'bottom 20%',
-          // toggleActions: 'play none none reverse',
         }
       }
     );
+    gsap.fromTo(
+      '.textBox', {
+        duration: 2,
+        opacity: 0,
+       scale: 0
+      }, {
+         scale: 1,
+        duration: 2,
+        opacity: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.textBox',
+          start: 'top bottom',
+          end: 'bottom top',
+        }
+      }
+    )
   }, []);
   return (
     <div>
@@ -85,11 +93,11 @@ const Handbook = () => {
             </div>
             </div>
           </div>
-          <div className='hello_ManTwo w-full lg:w-6/12 px-3 flex max-lg:justify-center max-sm:pt-[56px] max-lg:pt-20'>
+          <div className='hello_ManTwo w-full lg:w-6/12 px-3 flex justify-center max-sm:pt-[56px] max-lg:pt-20'>
             <img src={man_Image} className=' pointer-events-none max-sm:max-w-[261px] max-w-[392px]' alt="man_Image" />
           </div>
         </div>
-        <div className='max-w-[1140px] rounded-[8px] border-[1px] border-[#00000029] bg-white p-6 max-sm:p-4'>
+        <div className='max-w-[1140px] textBox rounded-[8px] border-[1px] border-[#00000029] bg-white p-6 max-sm:p-4'>
           <p className='font-lato font-normal text-base leading-6 text-gray max-w-[1092px]'>
             By basing its knowledge on these official sources, Herbert provides you with accurate, up-to-date, & reliable information on German immigration processes. Our commitment to using these authoritative resources ensures that you receive guidance aligned with current German immigration laws & practices.
           </p>

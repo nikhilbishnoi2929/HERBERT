@@ -5,7 +5,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const Residence = () => {
   useEffect(() => {
-
     gsap.fromTo(
       '.helloManTwo', {
       duration: 3,
@@ -21,7 +20,6 @@ const Residence = () => {
           trigger: '.helloManTwo',
           start: "top center",
           end: "bottom 50%"
-
         }
       }
     )
@@ -42,11 +40,9 @@ const Residence = () => {
           trigger: '.text_Animation',
           start: "top center",
           end: "bottom 50%",
-          // toggleActions: 'play none none reverse',
         }
       }
     )
-
   }, []);
   return (
     <div className=' max-w-[1047px] container mx-auto px-3 pb-[120px] max-md:pb-20'>
@@ -77,7 +73,6 @@ const Residence = () => {
               <h4 className='font-lato font-normal text-base max-sm:text-sm leading-6 text-gray max-w-[478px]'> Integration measures</h4>
             </div>
             <p className='font-lato font-normal text-base leading-6 max-sm:text-sm text-gray max-w-[478px] pt-[10px]'>Herbert utilizes this act to provide precise information on legal residence requirements and pathways to living in Germany.</p>
-
           </div>
         </div>
         <div className='w-full lg:w-6/12 px-3 flex lg:justify-end justify-center '>
@@ -87,5 +82,4 @@ const Residence = () => {
     </div>
   )
 }
-
 export default Residence

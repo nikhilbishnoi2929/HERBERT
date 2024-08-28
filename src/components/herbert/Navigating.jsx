@@ -8,7 +8,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const Navigating = () => {
   useEffect(() => {
-    // Staggered animation for heading text
     gsap.fromTo(
       '.heading span',
       { opacity: 0, y: 50, rotation: 0, duration: 4, },
@@ -56,7 +55,6 @@ const Navigating = () => {
         },
       }
     );
-    
     gsap.fromTo(
       '.helloMan', {
       duration: 3,
@@ -94,7 +92,6 @@ const Navigating = () => {
       }
     )
   }, []);
-
   return (
     <div className='bg-headerBg bg-full'>
       <Hero />
@@ -122,5 +119,4 @@ const Navigating = () => {
     </div>
   );
 };
-
 export default Navigating;
