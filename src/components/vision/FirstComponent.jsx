@@ -13,7 +13,6 @@ const FirstComponent = () => {
       <Features />
       <Friendly />
       <Resources />
-      <Friendly />
       <Visa />
       <Footer />
     </>

@@ -29,9 +29,6 @@ module.exports = {
         lato: ["lato", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
       },
-      boxShadow: {
-
-      },
       colors: {
         orange: "#FF4C24",
         black: "#010101",

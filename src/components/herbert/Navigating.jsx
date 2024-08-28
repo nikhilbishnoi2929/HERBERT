@@ -4,7 +4,7 @@ import COMMON_BUTTON from '../common/Commonbtn'
 const Navigating = () => {
   return (
     <div className='bg-headerBg'>
-      <div className='container max-w-[1164px] mx-auto px-3 '>
+      {/* <div className='container max-w-[1164px] mx-auto px-3 '>
         <nav>
           <div className=' py-[23px] flex justify-between items-center'>
             <img src={logo} alt="logo" />
@@ -16,8 +16,8 @@ const Navigating = () => {
             </ul>
           </div>
         </nav>
-      </div>
-      <div className=' container max-w-[1168px] px-3 mx-auto'>
+      </div> */}
+      {/* <div className=' container max-w-[1168px] px-3 mx-auto'>
         <div className='flex justify-center'>
           <div className='flex flex-col text-center pt-[139px]'>
 
@@ -25,7 +25,7 @@ const Navigating = () => {
             <COMMON_BUTTON text={"Start your conversation with Herbert"} />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
