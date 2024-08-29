@@ -1,14 +1,13 @@
 * {
   font-family: "Rubik", sans-serif;
 }
-
 .custom_Duration {
   transition: all linear 400ms;
 }
 .hover_Effect:hover {
-  transform: scale(1.2);
+  transform: scale(1.2);      
 }
-.loader {
+.loader {          
   width: 120px;
   height: 22px;
   border-radius: 20px;
@@ -16,8 +15,9 @@
   border: 2px solid;
   position: relative;
 }
+
 .loader::before {
-  content: "";
+  content: "";        
   position: absolute;
   margin: 2px;
   inset: 0 100% 0 0;
