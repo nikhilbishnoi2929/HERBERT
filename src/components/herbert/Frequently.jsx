@@ -69,7 +69,7 @@ const Frequently = () => {
   };
   return (
     <div className=' relative '>
-      <div className='container max-w-[1164px] mx-auto px-3 -mb-[15px] max-sm:-mb-20 max-lg:-mb-[40px] max-md:-mb-[60px]'>
+      <div className='container max-w-[1164px] mx-auto px-3 -mb-[15px] max-sm:-mb-20 max-lg:-mb-[40px] max-md:-mb-[60px] pt-[125px]'>
         <div className='flex justify-center'>
           <div className='flex flex-col items-center text-center pt-5'>
             <h2 className='z-20 frequentlyAsked font-semibold text-5xl leading-[56px] max-sm:text-2xl max-sm:leading-7 max-sm:max-w-[327px] text-black'>

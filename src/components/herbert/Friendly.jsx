@@ -34,8 +34,8 @@ const Friendly = () => {
                       <p className='max-w-[90px] font-lato font-normal text-xs leading-6 text-gray'>{plan.messageCount}</p>
                     </div>
                   </div>
-                  <div className='flex flex-col text-center font-semibold text-xs leading-5 mt-[32px] mb-[32px]'>
-                    <button className='max-w-[307px] h-[47px] bg-btnOrange text-white rounded-[10px]'>Upgrade to Basic</button>
+                  <div className='flex flex-col text-center w-full font-semibold text-xs leading-5 mt-[32px] mb-[32px]'>
+                    <COMMON_BUTTON className={`w-full`} text={"Upgrade to Basic"}/>
                   </div>
                 </div>
               </div>

@@ -28,3 +28,6 @@
 @keyframes l6 {
     100% {inset:0}
 }
+.transformScale:hover{
+  transform: scaleY(1.2);
+}

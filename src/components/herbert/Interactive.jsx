@@ -31,7 +31,7 @@ const Interactive = () => {
       <div className='flex flex-wrap flex-row -mx-[12px] items-center xl:transform xl:-translate-y-[108px] sm:py-5 max-lg:justify-center'>
         {INTER_ACTIVE.map((obj, index) => (
           <div className='cardInteractive lg:w-4/12 md:w-6/12 w-full px-3 max-lg:pt-4 max-lg:justify-center max-lg:flex '>
-            <div className='z-20 md:max-w-[364px] w-full rounded-[8px] hover:border-0 custom_Duration hover:shadow-card_Shadow lg:hover:py-[41px] bg-white border-[1px] border-[#00000029] py-[20px] max-sm:py-[22px]'>
+            <div className='z-20 md:max-w-[364px] w-full rounded-[8px] hover:border-0 custom_Duration hover:shadow-card_Shadow transformScale bg-white border-[1px] border-[#00000029] py-[20px] max-sm:py-[22px]'>
               <div key={index} className='flex justify-center'>
                 <div className=' flex flex-col items-center'>
                   <img className='max-w-[56px] max-sm:max-w-[48px]' src={obj.img} alt={obj.heading} />  

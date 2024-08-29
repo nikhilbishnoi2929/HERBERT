@@ -1,14 +1,12 @@
 import React from 'react'
 import border_code from '../../assets/images/webp/border-code.webp'
 import COMMON_BUTTON from '../common/Commonbtn'
-
 const Schengen = () => {
   return (
     <>
       <div className='pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-16 md:pb-20 lg:pb-28'>
         <div className='max-w-[1290px] px-4 sm:px-6 md:px-8 mx-auto'>
           <div className="flex flex-col lg:flex-row items-center lg:items-start">
-            {/* Image Section */}
             <div className='lg:w-6/12 md:w-6/12 w-full px-4 '>
              <div className='relative'>
              <img
@@ -18,8 +16,6 @@ const Schengen = () => {
               />
              </div>
             </div>
-
-            {/* Content Section */}
             <div className='lg:w-6/12 md:w-6/12 w-full px-4 lg:pl-8'>
               <div className='flex flex-col max-w-full lg:max-w-[473px]'>
                 <h2 className='text-black font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-snug sm:leading-normal md:leading-tight lg:leading-tight mb-4'>
@@ -32,11 +28,9 @@ const Schengen = () => {
                   <br />• Border crossing procedures
                 </p>
               </div>
-             
                 <div className='pt-8'>
                   <COMMON_BUTTON text={"Learn more"} />
                 </div>
-              
             </div>
           </div>
         </div>
