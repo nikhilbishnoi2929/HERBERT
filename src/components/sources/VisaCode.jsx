@@ -112,6 +112,7 @@ const VisaCode = () => {
           </div>
           <div className='w-full text-VisaCode lg:w-6/12 px-3 max-lg:pt-[56px] flex lg:justify-end justify-center'>
             <div className=' flex flex-col'>
+          <div className='w-full text-VisaCode lg:w-6/12 px-3 max-lg:pt-[56px]'>
             <h3 className='font-rubik font-semibold text-5xl max-md:text-3xl leading-[56px] text-black max-sm:text-2xl'>
               Visa <span className='text-orange'>Code</span>
             </h3>
@@ -126,6 +127,7 @@ const VisaCode = () => {
         </div>
       </div>
     </div>
+    </div>
   );
-};
+}
 export default VisaCode;

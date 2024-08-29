@@ -9,6 +9,7 @@ import Footer from '../common/Footer';
 import Frequently from '../herbert/Frequently';
 import ScrollToTopButton from '../common/ScrollToTopButton';
 import Preloader from '../common/Preloader';
+
 const FirstComponent = () => {
   return (
     <div className=' overflow-hidden'>
