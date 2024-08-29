@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import man_Image from '../../assets/images/webp/helloMan.webp';
+import manImage from '../../assets/images/webp/helloMan.webp';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -94,7 +94,7 @@ const Handbook = () => {
             </div>
           </div>
           <div className='hello_ManTwo w-full lg:w-6/12 px-3 flex justify-center max-sm:pt-[56px] max-lg:pt-20'>
-            <img src={man_Image} className=' pointer-events-none max-sm:max-w-[261px] max-w-[392px]' alt="man_Image" />
+            <img src={manImage} className=' pointer-events-none max-sm:max-w-[261px] max-w-[392px]' alt="manImage" />
           </div>
         </div>
         <div className='max-w-[1140px] textBox rounded-[8px] border-[1px] border-[#00000029] bg-white p-6 max-sm:p-4'>

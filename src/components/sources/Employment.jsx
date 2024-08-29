@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NUMBERFOUR, NUMBERONE, NUMBERTHREE, NUMBERTWO } from '../common/Icon';
+import { NumberFour, NumberThree, NumberTwo,NumberOne } from '../common/Icon';
 import tourismEmploy from '../../assets/images/webp/tourismEmploy.webp';
 import ellipsEmploy from '../../assets/images/svg/ellipsEmployment.svg';
 import empoyEllips from '../../assets/images/svg/EmployEllipsLeft.svg';
@@ -10,28 +10,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Employment = () => {
   useEffect(() => {
-    // Animation for elements with class 'selfEmployment'
     gsap.fromTo(
       '.selfEmployment',
       { x: 100, opacity: 0 },
       { x: 0, opacity: 1, duration: 2, ease: 'power3.out', delay: 0.9, stagger: 0.3, scrollTrigger: { trigger: '.selfEmployment', start: 'top 100%', end: 'bottom 50%' } }
     );
-
-    // Animation for elements with class 'workEmployment'
     gsap.fromTo(
       '.workEmployment',
       { x: -100, opacity: 0 },
       { x: 0, opacity: 1, duration: 2, ease: 'power3.out', delay: 0.9, stagger: 0.3, scrollTrigger: { trigger: '.workEmployment', start: 'top 100%', end: 'bottom 50%' } }
     );
-
-    // Animation for elements with class 'tourismEmploy'
     gsap.fromTo(
       '.tourismEmploy',
       { scale: 0, opacity: 0 },
       { scale: 1, opacity: 1, duration: 2, ease: 'power3.out', scrollTrigger: { trigger: '.workEmployment', start: 'top 100%', end: 'bottom 50%' } }
     );
   }, []);
-
   return (
     <div className='relative'>
       <div className='container max-w-[1140px] mx-auto px-3 py-[120px] max-lg:py-20 z-30'>
@@ -45,44 +39,37 @@ const Employment = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Mobile View */}
       <div className='z-30 flex justify-center lg:hidden'>
         <img className='max-w-[270px] pt-6 w-full' src={tourismEmploy} alt="tourismEmploy" />
       </div>
-
-      {/* Desktop View */}
       <div className='flex max-lg:hidden lg:gap-[73px] max-sm:gap-6 justify-between lg:justify-center items-center pt-[56px] max-sm:pt-[50px]'>
         <div className='flex lg:justify-end'>
           <div className='flex flex-col lg:items-end lg:text-end'>
             <div className='size-[40px] bg-btnOrange rounded-full flex justify-center items-center workEmployment'>
-              <NUMBERONE />
+              <NumberOne />
             </div>
             <h2 className='font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base workEmployment'>
               Work permit requirements
             </h2>
             <div className='mt-[56px] size-[40px] bg-btnOrange rounded-full flex justify-center items-center workEmployment'>
-              <NUMBERTWO />
+              <NumberTwo />
             </div>
             <h2 className='font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base workEmployment'>
               Job-seeking visas
             </h2>
           </div>
         </div>
-
         <img className='max-lg:hidden max-w-[259px] w-full tourismEmploy' src={tourismEmploy} alt="tourismEmploy" />
-
         <div className='flex lg:justify-start'>
           <div className='flex flex-col'>
             <div className='size-[40px] bg-btnOrange rounded-full flex justify-center items-center selfEmployment'>
-              <NUMBERTHREE />
+              <NumberThree />
             </div>
             <h2 className='font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base selfEmployment'>
               Self-employment regulations
             </h2>
             <div className='mt-[56px] size-[40px] bg-btnOrange rounded-full flex justify-center items-center selfEmployment'>
-              <NUMBERFOUR />
+              <NumberFour />
             </div>
             <h2 className='max-w-[325px] font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base selfEmployment'>
               Specific provisions for various professional groups
@@ -90,13 +77,11 @@ const Employment = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile View (Repeated) */}
       <div className='lg:hidden flex flex-row flex-wrap -mx-3 pt-11 z-30'>
         <div className='w-6/12 px-3'>
           <div className='flex flex-col lg:items-end lg:text-end'>
             <div className='size-[40px] bg-btnOrange max-sm:size-[30px] rounded-full flex justify-center items-center'>
-              <NUMBERONE className="w-[5px] h-[13px]" />
+              <NumberOne className="w-[5px] h-[13px]" />
             </div>
             <h2 className='font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base'>
               Self-employment regulations
@@ -106,7 +91,7 @@ const Employment = () => {
         <div className='w-6/12 px-3'>
           <div className='flex flex-col lg:items-end lg:text-end'>
             <div className='size-[40px] bg-btnOrange max-sm:size-[30px] rounded-full flex justify-center items-center'>
-              <NUMBERTWO className="w-[5px] h-[13px]" />
+              <NumberTwo className="w-[5px] h-[13px]" />
             </div>
             <h2 className='font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base'>
               Job-seeking visas
@@ -116,7 +101,7 @@ const Employment = () => {
         <div className='w-6/12 px-3 pt-6'>
           <div className='flex flex-col lg:items-end lg:text-end'>
             <div className='size-[40px] bg-btnOrange max-sm:size-[30px] rounded-full flex justify-center items-center'>
-              <NUMBERTHREE className="w-[5px] h-[13px]" />
+              <NumberThree className="w-[5px] h-[13px]" />
             </div>
             <h2 className='font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base'>
               Self-employment regulations
@@ -126,7 +111,7 @@ const Employment = () => {
         <div className='w-6/12 px-3 pt-6'>
           <div className='flex flex-col lg:items-end lg:text-end'>
             <div className='size-[40px] bg-btnOrange max-sm:size-[30px] rounded-full flex justify-center items-center'>
-              <NUMBERFOUR className="w-[5px] h-[13px]" />
+              <NumberFour className="w-[5px] h-[13px]" />
             </div>
             <h2 className='max-w-[325px] font-lato pt-4 font-medium text-xl leading-6 text-black max-sm:text-base'>
               Specific provisions for various professional groups
@@ -134,10 +119,9 @@ const Employment = () => {
           </div>
         </div>
       </div>
-
-      {/* Background Images */}
       <img className='absolute max-lg:bottom-[10%] max-md:bottom-[0%] bottom-[-17%] w-full h-[270px] z-0 left-0' src={ellipsEmploy} alt="ellipsEmploy" />
       <img className='absolute bottom-[137px] max-lg:top-[80px] max-sm:left-[-20px] left-0 z-0' src={empoyEllips} alt="empoyEllips" />
+    </div>
     </div>
   );
 };

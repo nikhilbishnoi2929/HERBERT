@@ -1,5 +1,5 @@
 import React from 'react'
-import team_Img from '../../assets/images/webp/team_Img.webp'
+import teamImg from '../../assets/images/webp/team_Img.webp'
 import COMMON_BUTTON from '../common/Commonbtn'
 
 const Resources = () => {
@@ -43,7 +43,7 @@ const Resources = () => {
 
             <div className='lg:w-6/12 md:w-6/12 w-full px-4'>
               <div className='relative '>
-                <img src={team_Img} alt="team_Img" className='w-full max-w-[700px] lg:max-w-[701px] lg:left-[60px] md:left-[50px] absolute'/>
+                <img src={teamImg} alt="teamImg" className='w-full max-w-[700px] lg:max-w-[701px] lg:left-[60px] md:left-[50px] absolute'/>
               </div>
             </div>
           </div>

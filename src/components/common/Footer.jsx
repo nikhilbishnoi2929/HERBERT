@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import page_Logo from '../../assets/images/svg/pageLogo.svg'
-import { FACEBOOK, INSTAGRAM, LINKDIN } from './Icon'
+import { Facebook,Instagram, LinKDin } from './Icon'
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -72,9 +72,9 @@ const Footer = () => {
                         <div className=' flex flex-col'>
                             <a href="" className='z-20 font-lato font-medium text-base leading-5 text-black opacity-[90%]'>Follow Us</a>
                             <div className='z-20 flex gap-3 pt-4'>
-                                <a href="https://www.facebook.com" target='black' className=' hover_Effect custom_Duration'> <FACEBOOK /></a>
-                                <a href="https://www.instagram.com" target='black' className=' hover_Effect custom_Duration'> <INSTAGRAM /></a>
-                                <a href="https://www.linkedin.com" target='black' className=' hover_Effect custom_Duration'> <LINKDIN /></a>
+                                <a href="https://www.facebook.com" target='black' className=' hover_Effect custom_Duration'> <Facebook /></a>
+                                <a href="https://www.instagram.com" target='black' className=' hover_Effect custom_Duration'> <Instagram /></a>
+                                <a href="https://www.linkedin.com" target='black' className=' hover_Effect custom_Duration'> <LinKDin /></a>
                             </div>
                         </div>
                     </div>

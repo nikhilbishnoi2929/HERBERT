@@ -14,14 +14,14 @@ const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
       '.head',
-      { y: -50, opacity: 0, duration: 0.5, },
+      { y: -50, opacity: 0, duration: 2, },
       {
         y: 0,
         opacity: 1,
-        duration: 0.5,
+        duration: 2,
         ease: 'power3.out',
-        delay: 0.3,
-        stagger: 0.5,
+        delay: 1,
+        stagger: 1.5,
         scrollTrigger: {
           trigger: '.head',
           start: 'top center',

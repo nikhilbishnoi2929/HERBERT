@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FAQS } from '../common/Helper';
 import COMMON_BUTTON from '../common/Commonbtn';
-import accordion_Bg from '../../assets/images/webp/accordionBg.webp';
+import accordionBg from '../../assets/images/webp/accordionBg.webp';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -116,7 +116,7 @@ const Frequently = () => {
           <COMMON_BUTTON className="z-20" text={"View All"} />
         </div>
       </div>
-      <img className=' absolute top-[255px] z-0 left-0 w-full h-[686px]' src={accordion_Bg} alt="accordionBg" />
+      <img className=' absolute top-[255px] z-0 left-0 w-full h-[686px]' src={accordionBg} alt="accordionBg" />
     </div>
   );
 };

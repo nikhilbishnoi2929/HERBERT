@@ -1,5 +1,5 @@
 import React from 'react'
-import border_code from '../../assets/images/webp/border-code.webp'
+import borderCode from '../../assets/images/webp/border-code.webp'
 import COMMON_BUTTON from '../common/Commonbtn'
 const Schengen = () => {
   return (
@@ -10,7 +10,7 @@ const Schengen = () => {
             <div className='lg:w-6/12 md:w-6/12 w-full px-4 '>
              <div className='relative'>
              <img
-                src={border_code}
+                src={borderCode}
                 alt="border-code"
                 className='w-full max-w-[700px] lg:max-w-[650px] md:max-w-[600px] absolute lg:right-[80x] lg:top-0 md:right-4 md:top-0 right-[90px] flex justify-end items-end'
               />

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import man_Image from '../../assets/images/webp/helloMan.webp'
+import manImage from '../../assets/images/webp/helloMan.webp'
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -53,7 +53,7 @@ const Residence = () => {
             <p className='font-lato max-sm:text-sm font-normal text-base leading-6 text-gray max-w-[478px] pt-3'>The Aufenthaltsgesetz is the cornerstone of German immigration law. This act governs:</p>
             <div className='lg:hidden'>
               <div className=' flex max-sm:justify-center'>
-                <img src={man_Image} className='w-full pointer-events-none max-sm:max-w-[261px] max-w-[392px] py-8' alt="man_Image" />
+                <img src={manImage} className='w-full pointer-events-none max-sm:max-w-[261px] max-w-[392px] py-8' alt="manImage" />
               </div>
             </div>
             <div className='flex items-center gap-3 ps-[10px] pt-[10px]'>
@@ -76,7 +76,7 @@ const Residence = () => {
           </div>
         </div>
         <div className='w-full lg:w-6/12 px-3 flex lg:justify-end justify-center '>
-          <img src={man_Image} className='max-lg:hidden pointer-events-none helloManTwo max-w-[392px]' alt="man_Image" />
+          <img src={manImage} className='max-lg:hidden pointer-events-none helloManTwo max-w-[392px]' alt="manImage" />
         </div>
       </div>
     </div>

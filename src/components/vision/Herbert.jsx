@@ -10,7 +10,7 @@ import Frequently from '../herbert/Frequently';
 import ScrollToTopButton from '../common/ScrollToTopButton';
 import Preloader from '../common/Preloader';
 
-const FirstComponent = () => {
+const Herbert = () => {
   return (
     <div className=' overflow-hidden'>
       <Navigator />
@@ -26,4 +26,4 @@ const FirstComponent = () => {
     </div>
   )
 }
-export default FirstComponent
+export default Herbert
