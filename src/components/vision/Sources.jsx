@@ -5,23 +5,25 @@ import Schengen from '../sources/Schengen'
 import Employment from '../sources/Employment'
 import VisaCode from '../sources/VisaCode'
 import Handbook from '../sources/Handbook'
-import Consectetur from '../sources/Consectetur'
-import Footer from '../herbert/Footer'
+import Visa from '../common/Visa'
+import Footer from '../common/Footer'
+import ScrollToTopButton from '../common/ScrollToTopButton'
+import Preloader from '../common/Preloader'
 
 const Sources = () => {
   return (
-    <>
-    
-    <Foundations/>
-    <Residence/>
-    <Schengen/>
-    <Employment/>
-    <VisaCode/>
-    <Handbook/>
-    <Consectetur/>
-    <Footer/>
-    </>
+    <div className=' overflow-hidden'>
+      <Foundations />
+      <Residence />
+      <Schengen />
+      <Employment />
+      <VisaCode />
+      <Handbook />
+      <Visa />
+      <Footer />
+      <ScrollToTopButton/>
+      <Preloader/>
+    </div>
   )
 }
-
 export default Sources
