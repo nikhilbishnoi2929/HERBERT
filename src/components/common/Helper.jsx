@@ -53,7 +53,7 @@ export const HERO_TEXT = [
     {
         label: "Our Vision",
     }
-]
+];
 export const INTER_ACTIVE = [
     {
         img: Inter_Active,

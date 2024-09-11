@@ -4,7 +4,6 @@ import { Facebook,Instagram, LinKDin } from './Icon'
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-
 const Footer = () => {
     useEffect(() => {
         gsap.fromTo(
@@ -35,7 +34,7 @@ const Footer = () => {
             opacity: 1,
             ease: 'power3.out',
             scrollTrigger: {
-                trigger: '.footerFollow',
+                 trigger: '.footerFollow',
                 start: 'top bottom',
                 end: 'bottom top',
             }
@@ -54,18 +53,18 @@ const Footer = () => {
                     <div className='z-20 pt-4 footerHerbert w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
                         <ul>
                             <li><a href="" className=' font-lato font-medium text-base leading-5 text-black opacity-[90%]'>Quick Links</a></li>
-                            <li className='pt-4'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Services</a></li>
-                            <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>About Us</a></li>
-                            <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Features</a></li>
-                            <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Plans</a></li>
+                            <li className='pt-4'><a href="" className=' cursor-pointer font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Services</a></li>
+                            <li className='pt-2'><a href="" className=' cursor-pointer font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>About Us</a></li>
+                            <li className='pt-2'><a href="" className='cursor-pointer font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Features</a></li>
+                            <li className='pt-2'><a href="" className='cursor-pointer font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Plans</a></li>
                         </ul>
                     </div>
                     <div className='z-20 pt-4 footerFollow w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-center'>
                         <ul>
                             <li><a href="" className=' font-lato font-medium text-base leading-5 text-black opacity-[90%]'>Support</a></li>
-                            <li className='pt-4'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Help Center</a></li>
-                            <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Term & Conditions</a></li>
-                            <li className='pt-2'><a href="" className=' font-lato font-normal text-base leading-6 text-gray hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Privacy Policy</a></li>
+                            <li className='pt-4'><a href="" className='cursor-pointer font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Help Center</a></li>
+                            <li className='pt-2'><a href="" className='cursor-pointer font-lato font-normal text-base leading-6 text-gray  hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Term & Conditions</a></li>
+                            <li className='pt-2'><a href="" className='cursor-pointer font-lato font-normal text-base leading-6 text-gray hover:text-black duration-300 ease-linear after:absolute after:bg-black after:h-[3px] after:w-0 after:left-[50%] after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative'>Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div className='z-20 pt-4 footerFollow w-2/12 px-3 max-lg:w-4/12 max-sm:w-6/12 max-lg:justify-start max-lg:pt-8 flex justify-end'>
@@ -87,4 +86,5 @@ const Footer = () => {
         </div>
     )
 }
+
 export default Footer

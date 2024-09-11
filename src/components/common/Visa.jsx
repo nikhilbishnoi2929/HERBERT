@@ -69,7 +69,9 @@ const Visa = () => {
           </div>
         </div>
       </div>
+      
     </div>
   )
 }
+
 export default Visa
